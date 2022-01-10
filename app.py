@@ -6,6 +6,7 @@ from forms import addproduct,editproduct
 from sqlalchemy.exc import IntegrityError
 
 
+
 app = Flask(__name__)
 app.secret_key = "redhat"
 app.permanent_session_lifetime = timedelta(minutes=5)
@@ -85,6 +86,8 @@ def delete():
 ct=0
 @app.route('/download')
 def to_csv ():
+    if not os.path.isdir('Generated_CSV'):
+        os.mkdir("Generated_CSV")
     if bool(Product.query.all()) == False:
         flash(f'No product is present','danger')
         return redirect('/')
