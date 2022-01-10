@@ -7,7 +7,7 @@ In this project, I designed an inventory tracking web application for a logistic
 
 ## 🚩 ABSTRACT
 
-I leveraged two useful libraries: Python Flask and SQLAlchemy, and used four different programming languages: Python, HTML5(with Bootstrap and Jinja templating), CSS, and SQLite3. 
+I leveraged two useful libraries: Python Flask and SQLAlchemy, and used four different programming languages: Python, HTML5(with Bootstrap and Jinja templating), CSS, and SQL. 
 
 For this project, Flask is a framework that not only provides a user-friendly web interface but also handles functionalities of the webiste, including downloading and uploading data. SQLAlchemy, an object relational mapper (ORM), stores the product name, quantity and price, also avoids adding duplicate data.
 
