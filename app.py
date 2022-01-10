@@ -1,7 +1,6 @@
-from flask import Flask,render_template,url_for,redirect,flash,request,make_response
+from flask import Flask,render_template,url_for,redirect,flash,request
 from flask_sqlalchemy import SQLAlchemy
-from datetime import timedelta, datetime
-from io import StringIO
+from datetime import timedelta
 import csv,os
 from forms import addproduct,editproduct
 from sqlalchemy.exc import IntegrityError
