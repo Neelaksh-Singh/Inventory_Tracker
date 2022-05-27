@@ -1,15 +1,8 @@
-# Shopify_Engineer_Intern_Challenge
-
-### Shopify Fall 2021 Back-end Developer / Production Engineer Intern Challenge Question (Inventory)
-### Created Neelaksh Singh. (neelaksh48@gmail.com)
+# Inventory Tracker
 
 In this project, I designed an inventory tracking web application for a logistics company, with the functionality of creating, editing and deletion of product.
 
 ## 🚩 ABSTRACT
-
-I leveraged two useful libraries: Python Flask and SQLAlchemy, and used four different programming languages: Python, HTML5(with Bootstrap and Jinja templating), CSS, and SQL. 
-
-For this project, Flask is a framework that not only provides a user-friendly web interface but also handles functionalities of the webiste, including downloading and uploading data. SQLAlchemy, an object relational mapper (ORM), stores the product name, quantity and price, also avoids adding duplicate data.
 
 For the backend design, I utilized Python Flask and sqlalchemy for product uploading, storing and duplicate checking purposes. In particular, we used the HTTP post action to trigger the upload process of product, and built-in functionality of HTML5 to check the data integrity. Also used WTForms for handling form data validation.
 The webisite uses flash a component of Flask which makes user have a better sense of their interaction with the webpage.
@@ -30,7 +23,7 @@ $ cd Shopify_Engineer_Intern_Challenge/
 $ pip install -r requirements.txt
 $ python app.py
 ```
-After this step Your Flask app will be running at **localhost:80** 
+After this step Your Flask app will be running at **localhost:8085** 
 
 ## What's next for this repo
 
