@@ -8,7 +8,7 @@ from sqlalchemy.exc import IntegrityError
 
 
 app = Flask(__name__)
-app.secret_key = "redhat"
+app.secret_key = "password"
 app.permanent_session_lifetime = timedelta(minutes=5)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -113,4 +113,4 @@ db.create_all()
 db.session.commit()
 
 if __name__ == "__main__":
-    app.run(port=80,debug=True)
+    app.run(port=8085,debug=True)
